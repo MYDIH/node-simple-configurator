@@ -22,15 +22,15 @@ Constructs a Configurator object
 * `key` => The path where the configuration file will be stored
 * `encryptionKey` => *[optional]* The key to use while encrypting
 
-  ** Default : ** null
+  **Default :** null
 
 * `algorithm` => *[optional]* The algorithm to use to encrypt the configuration file
 
-  ** Default : ** aes-256-ctr
+  **Default :** aes-256-ctr
 
-** Returns : ** The newly created Configurator.
+**Returns :** The newly created Configurator.
 
-> ** Note :** To disable encryption, do not specify an `encryptKey` or and `algorithm`
+> **Note :** To disable encryption, do not specify an `encryptKey` or and `algorithm`
 
 `.get(key)` :
 
@@ -38,7 +38,7 @@ Retrieves a key from the Configurator
 
 * `key` => The key to retrieve the value of
 
-** Returns : ** The value associated with the key or undefined if the key isn't existing
+**Returns :** The value associated with the key or undefined if the key isn't existing
 
 `.set(key, value)` :
 
@@ -47,17 +47,17 @@ Stores a key/value pair to the Configurator
  * `key` => The key associated with the value
  * `value` => The value to store
 
-** Returns : ** Nothing.
+**Returns :** Nothing.
 
-> ** Note :** This method will overwrite any previously declared key's value
+> **Note :** This method will overwrite any previously declared key's value
 
 `.persist()` :
 
 Writes the configurator underlying object to the file system.
 
-** Returns : ** Nothing.
+**Returns :** Nothing.
 
-> ** Returns : ** This method will only write to the file system if needed, it's safe to call it in a loop. You can achieve bulk insertions of key/value pairs by inserting them using `store(key, value)` and calling this method after the insertions are finished
+> **Returns :** This method will only write to the file system if needed, it's safe to call it in a loop. You can achieve bulk insertions of key/value pairs by inserting them using `store(key, value)` and calling this method after the insertions are finished
 
 # License
 
