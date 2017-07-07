@@ -1,5 +1,5 @@
 {
-  "name": "simple-configurator",
+  "name": "node-simple-configurator",
   "version": "1.0.0",
   "description": "A simple mean to store encrypted key/value pairs to the filesystem",
   "main": "index.js",
@@ -14,5 +14,17 @@
   "license": "MIT",
   "devDependencies": {
     "mocha": "^3.4.2"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MYDIH/node-simple-configurator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MYDIH/node-simple-configurator/issues"
+  },
+  "homepage": "https://github.com/MYDIH/node-simple-configurator#readme"
 }

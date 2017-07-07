@@ -30,7 +30,7 @@ Constructs a Configurator object
 
 **Returns :** The newly created Configurator.
 
-> **Note :** To disable encryption, do not specify an `encryptKey` or and `algorithm`
+> **Note :** To disable encryption, do not specify `encryptKey` and `algorithm`
 
 `.get(key)` :
 
@@ -58,6 +58,10 @@ Writes the configurator underlying object to the file system.
 **Returns :** Nothing.
 
 > **Returns :** This method will only write to the file system if needed, it's safe to call it in a loop. You can achieve bulk insertions of key/value pairs by inserting them using `store(key, value)` and calling this method after the insertions are finished
+
+# Tests
+
+Run `npm test`
 
 # License
 
