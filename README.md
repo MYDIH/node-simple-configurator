@@ -57,7 +57,7 @@ Writes the configurator underlying object to the file system.
 
 **Returns :** Nothing.
 
-> **Returns :** This method will only write to the file system if needed, it's safe to call it in a loop. You can achieve bulk insertions of key/value pairs by inserting them using `store(key, value)` and calling this method after the insertions are finished
+> **Note :** This method will only write to the file system if needed, it's safe to call it in a loop. You can achieve bulk insertions of key/value pairs by inserting them using `store(key, value)` and calling this method after the insertions are finished
 
 # Tests
 
