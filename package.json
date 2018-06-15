@@ -13,7 +13,8 @@
   "author": "MYDIH",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^3.4.2"
+    "mocha": "^3.4.2",
+    "replace-in-file": "^3.4.0"
   },
   "directories": {
     "test": "test"
@@ -26,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/MYDIH/node-simple-configurator/issues"
   },
-  "homepage": "https://github.com/MYDIH/node-simple-configurator#readme"
+  "homepage": "https://github.com/MYDIH/node-simple-configurator#readme",
+  "optionalDependencies": {
+    "mongo": "^0.1.0"
+  }
 }
